@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comité Léopards 2026 - Objectif Amérique</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Police d'écriture Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Icônes (FontAwesome) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+TEAM DIASPORA USA-DRC/Monde
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h1>LÉOPARDS<span class="text-yellow">2026</span></h1></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil"><strong>Accueil</strong></a></li>
+                <li><a href="#video"><strong>Video</strong></a></li>
+                <li><a href="#mission"><strong>Notre Mission</strong></a></li>
+                <li><a href="#packs1"><strong>Bouquet Guadalajara</strong></a></li>
+                <li><a href="#packs2"><strong>Bouquet Houston/Atlanta</strong></a></li>
+                <li><a href="#gallery"><strong>Gallerie</strong></a></li>
+                <li><a href="#faq"><strong>Questions Fréquentes</strong></a></li>
+                <li><a href="#inscription" class="btn-nav">S'INSCRIRE</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION AVEC VIDÉO -->
+    <section id="accueil" class="hero" style="position: relative; overflow: hidden;">
+        
+        <!-- Code Vidéo de fond -->
+        <video autoplay muted loop playsinline id="myVideo" style="position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1; object-fit: cover;">
+            <source src="assets/intro.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        
+        <!-- Filtre sombre pour lire le texte -->
+        <div class="hero-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+        <div class="hero-content">
+            <h1 class="animate-text">CAP SUR LE <span class="text-yellow">MONDIAL 2026</span></h1>
+            <p><strong>Soutient Tout azimuth, aux Leopards de la RDC, pour le barrage historique au Mexique; <br>et la participation au Mondial 2026.</strong><br><br><h2>"F I M B U &nbsp;   N A  &nbsp;  F I M B U !"</h2></p><br>
+            
+            <div class="countdown">
+                <div class="time-box"><span id="days">00</span>Jours</div>
+                <div class="time-box"><span id="hours">00</span>Heures</div>
+                <div class="time-box"><span id="minutes">00</span>Min</div>
+            </div>
+            <a href="#inscription" class="btn-main">REJOINDRE LE MOUVEMENT</a>
+        </div>
+    </section>
+
+<!-- SECTION VIDÉO TEASER -->
+    <section id="video" class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">VIVEZ L'AMBIANCE</h2>
+            <p style="margin-bottom: 30px;">Regardez le message de mobilisation du capitaine.</p>
+            
+            <!-- Conteneur Vidéo Responsive -->
+            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
+                <!-- Remplacez l'ID 'k-R9hL77bhs' par l'ID de votre vidéo YouTube -->
+                <iframe 
+                    src="assets/Fimbu.mp4" type="video/mp4">
+                    style="position: absolute; top: 0; left: 0; width: 800px; height: 800px; border-radius: 10px;" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION -->
+    <section id="mission" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">NOTRE MISSION</h2>
+            <div class="mission-grid">
+                <div class="card">
+                    <h3>✈️ Logistique & Transport</h3>
+                    <p>Sécuriser et Obtenir des pris de voyage préferentiels et organisation de vols charters et de bus 
+			sécurisés depuis les hubs de Dallas et Houston vers Guadalajara. Assurer l'encadrement des supporteres à Guadalajara (Mars 2026, Mexique) et à Houston et Atlanta (Juin-Juillet2026, Etats-Unis)</p>
+                </div>
+                <div class="card">
+                    <h3>🛡️ Sécurité & Visas</h3>
+                    <p>Assistance administrative pour les visas Mexicains/US et encadrement sécuritaire sur place.</p>
+                </div>
+                <div class="card">
+                    <h3>🎉 Mobilisation</h3>
+                    <p>Création d'une Fan Zone congolaise et animation culturelle pour le "12ème Homme" pendant le matche de barrage, et pendant les phases finales du Mondial 2026.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PACKS VOYAGES -->
+    <!-- PACKS VOYAGE Guadalajara-->
+    <section id="packs1" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">LES BOUQUETS "GUADALAJARA 2026"</h2>
+            <p class="text-center">Choisissez votre formule pour accompagner les Léopards en Mars 2026.</p>
+            <div class="packs-grid">
+                <!-- Pack Bronze -->
+                <div class="pack-card">
+                    <div class="pack-header bg-blue">
+                        <h3>BOUQUET SUPPORTER</h3>
+                        <p>Départ USA (Dallas)</p>
+                    </div>
+                    <div class="pack-price">$580 <small>/ pers</small></div>
+                    <ul>
+                        <li>✅ Transport Bus Dallas-Guadalajara</li>
+                        <li>✅ Hôtel 2* (Chambre partagée)</li>
+                        <li>✅ Billet de Stade (Cat. 3)</li>
+                        <li>❌ Visa (Support uniquement)</li>
+                    </ul>
+
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+<!-- Identify your business so that you can collect the payments. --> 
+	<input type="hidden" name="business" value="omergp@gmail.com"> 
+
+<!-- Specify a Buy Now button. --> 
+	<input type="hidden" name="cmd" value="_xclick"> 
+
+<!-- Specify details about the item that buyers will purchase. --> 
+	<input type="hidden" name="Paiement Phase 1" value="1 Bouquet Guadalajara"> 
+	<input type="hidden" name="amount" value="580.95"> 
+	<input type="hidden" name="currency_code" value="USD"> 
+
+<!-- Display the payment button. --> 
+	<input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+	<img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+
+</form>
+
+
+<a href="URL_TO_YOUR_ZELLE_PAYMENT_PAGE" target="_blank" rel="noopener noreferrer">
+    <button>
+        Pay with Zelle
+    </button>
+</a>
+
+
+                    <a href="#inscription" class="btn-pack">Réserver</a>
+                </div>
+                
+                <!-- Pack Gold -->
+                <div class="pack-card featured">
+                    <div class="pack-header bg-red">
+                        <h3>BOUQUET VIP KINSHASA</h3>
+                        <p>Départ RDC (Kinshasa)</p>
+                    </div>
+                    <div class="pack-price">$XXX <small>/ pers</small></div>
+                    <ul>
+                        <li>✅ Vol Charter Kin-Mexique</li>
+                        <li>✅ Hôtel 4* (Chambre double)</li>
+                        <li>✅ Billet de Stade (Cat. 1)</li>
+                        <li>✅ Assistance Visa Prioritaire</li>
+                        <li>✅ Kit Maillot Officiel</li>
+                    </ul>
+                    <a href="#inscription" class="btn-pack btn-red">Réserver</a>
+                </div>
+
+                <!-- Pack Diaspora -->
+                <div class="pack-card">
+                    <div class="pack-header bg-yellow">
+                        <h3>BOUQUET DIASPORA</h3>
+                        <p>Autonome</p>
+                    </div>
+                    <div class="pack-price">$XXX <small>/ pers</small></div>
+                    <ul>
+                        <li>❌ Transport (Vol non inclus)</li>
+                        <li>✅ Accès Hôtel QG RDC</li>
+                        <li>✅ Billet de Stade (Regroupé)</li>
+                        <li>✅ Accès Fan Zone</li>
+                    </ul>
+                    <a href="#inscription" class="btn-pack">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOUQUET VOYAGE Houaton/Atlanta-->
+    <section id="packs2" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">LES BOUQUETS "HOUSTON/ATLANTA 2026"</h2>
+            <p class="text-center">Choisissez votre formule pour accompagner les Léopards De JUIN à JUILLET 2026.</p>
+            <div class="packs-grid">
+                <!-- Pack Bronze -->
+                <div class="pack-card">
+                    <div class="pack-header bg-blue">
+                        <h3>BOUQUET SUPPORTER</h3>
+                        <p>Départ USA (Dallas)</p>
+                    </div>
+                    <div class="pack-price">$XXX <small>/ pers</small></div>
+                    <ul>
+                        <li>✅ Transport Bus Dallas-Guadalajara</li>
+                        <li>✅ Hôtel 2* (Chambre partagée)</li>
+                        <li>✅ Billet de Stade (Cat. 3)</li>
+                        <li>❌ Visa (Support uniquement)</li>
+                    </ul>
+                    <a href="#inscription" class="btn-pack">Réserver</a>
+                </div>
+                
+                <!-- Pack Gold -->
+                <div class="pack-card featured">
+                    <div class="pack-header bg-red">
+                        <h3>BOUQUET VIP KINSHASA</h3>
+                        <p>Départ RDC (Kinshasa)</p>
+                    </div>
+                    <div class="pack-price">$XXX <small>/ pers</small></div>
+                    <ul>
+                        <li>✅ Vol Charter Kin-Mexique</li>
+                        <li>✅ Hôtel 4* (Chambre double)</li>
+                        <li>✅ Billet de Stade (Cat. 1)</li>
+                        <li>✅ Assistance Visa Prioritaire</li>
+                        <li>✅ Kit Maillot Officiel</li>
+                    </ul>
+                    <a href="#inscription" class="btn-pack btn-red">Réserver</a>
+                </div>
+
+                <!-- Pack Diaspora -->
+                <div class="pack-card">
+                    <div class="pack-header bg-yellow">
+                        <h3>BOUQUET DIASPORA</h3>
+                        <p>Autonome</p>
+                    </div>
+                    <div class="pack-price">$XXX <small>/ pers</small></div>
+                    <ul>
+                        <li>❌ Transport (Vol non inclus)</li>
+                        <li>✅ Accès Hôtel QG RDC</li>
+                        <li>✅ Billet de Stade (Regroupé)</li>
+                        <li>✅ Accès Fan Zone</li>
+                    </ul>
+                    <a href="#inscription" class="btn-pack">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULAIRE D'INSCRIPTION (BASE DE DONNÉES) -->
+    <section id="inscription" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white">ENREGISTREMENT DES SUPPORTERS</h2>
+            <p class="text-center text-white">Inscrivez-vous obligatoirement pour accéder à la billetterie et à l'assistance Visa.</p>
+            
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <label>Nom Complet</label>
+                    <input type="text" id="nom" required placeholder="Ex: Jean Mukendi">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required placeholder="Votre email">
+                </div>
+                <div class="form-group">
+                    <label>WhatsApp / Téléphone</label>
+                    <input type="tel" id="phone" required placeholder="+243 ...">
+                </div>
+                <div class="form-group">
+                    <label>Pays de Résidence Actuel</label>
+                    <select id="country" required>
+                        <option value="">Choisir...</option>
+                        <option value="RDC">RDC (Congo-Kinshasa)</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Europe">Europe (France/Belgique...)</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Statut Visa (USA/Mexique)</label>
+                    <select id="visa_status">
+                        <option value="aucun">Je n'ai aucun visa</option>
+                        <option value="usa_valid">J'ai un Visa USA valide</option>
+                        <option value="mex_valid">J'ai un Visa Mexique valide</option>
+                        <option value="schengen">J'ai un passeport/Visa Schengen</option>
+                    </select>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="charte" required>
+                    <label for="charte">J'accepte la <a href="#">Charte de Bonne Conduite</a> des supporters.</label>
+                </div>
+                <button type="submit" class="btn-submit">VALIDER MON INSCRIPTION</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">GALLERIE PHOTOS</h2>
+     <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
+</head>
+<body>
+
+<h2>Thumbnail Image</h2>
+<p>Click on the image to enlarge it.</p>
+
+<a target="_blank" href="Pamphlet.jpg">
+  <img src="assets/Pamphlet.jpg" alt="Pamphlet" style="width:150px">
+</a>
+<img src="/imageassets/Pamphet.jpg" alt="HTML5 Icon" style="width:128px;height:128px;">
+<p>Click on the image to enlarge it.</p>
+
+<a target="_blank" href="img_forest.jpg">
+  <img src="img_forest.jpg" alt="Forest" style="width:150px">
+</a>
+     </body>   </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">QUESTIONS FRÉQUENTES</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Q1. Qui êtes-vous et quelle est votre relation avec l'État ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R1. Nous sommes un Comité d'Appui indépendant, composé des personnes fiers de leur racines qui gardent le soucis de rendre au Congo un petit rien, pendant que la Congo leur a tout donné.
+			 Nous comptons parmis nous des leaders de la diaspora, et nous travaillons en étroite collaboration avec le Ministère des Sports et la FECOFA. Notre mission est d'organiser et de mettre en place des 
+			mechanismes pour le déplacement des supporters pour garantir que nos vaillant combatant, les Léopards ne soient jamais seule.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Q2. Ai-je besoin d'un Visa pour le Mexique ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R2. Oui. Cependant, si vous avez un Visa USA, Canada ou Schengen valide, vous êtes exempté de visa mexicain. Sinon, le comité vous assistera.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Q3. Si nous nous qualifions, mon visa mexicain suffit-il pour aller aux USA ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R3. Non. Pour la phase finale en juin (Houston/Atlanta), un visa américain est obligatoire. Nous lancerons la procédure "USA" dès la fin du match de barrage en mars.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Q4. Le Comité garantit-il l'obtention du visa ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R4. Non. Aucun organisme ne peut garantir un visa à 100%, c'est la souveraineté des États. Toutefois, le Comité fournit tous les documents justificatifs nécessaires (invitation officielle, réservation d'hôtel, plan de vol) et assure le suivi des dossiers pour maximiser vos chances.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Q5. Comment payer mon bouquet ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R5. Les paiements se feront par virement bancaire ou Mobile Money (pour la RDC) une fois votre inscription validée.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-6" aria-expanded="false"><span class="accordion-title">Q6. Puis-je rester aux USA ou au Mexique après les matchs pour chercher du travail ou visiter de la famille ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R6. Si vous voyagez avec le visa obtenu via le Comité, NON. Vous devez impérativement retourner avec le groupe. Tout manquement à cette règle met en danger la réputation de la RDC et empêchera l'obtention de visas pour les futurs événements sportifs.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-7" aria-expanded="false"><span class="accordion-title">Q7. Puis-je rester aux USA après le match ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R7. Non. Si vous voyagez sous l'encadrement du Comité, le retour groupé est obligatoire pour respecter les lois migratoires.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-8" aria-expanded="false"><span class="accordion-title">Q8. Comment s'inscrire ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R8. L'inscription se fera via notre plateforme numérique sécurisée ou à notre bureau de liaison à Kinshasa. Vous devrez fournir une copie de votre passeport valide au moins 6 mois après la date de retour.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-9" aria-expanded="false"><span class="accordion-title">Q9. Puis-je amener mes instruments de musique (Tam-tam, Vuvuzela) au stade ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R9. Oui, mais sous certaines conditions fixées par la FIFA et les stades locaux. Nous vous communiquerons la liste des objets autorisés avant le départ.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-10" aria-expanded="false"><span class="accordion-title">Q10. Une autre question ?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>R10. Contactez notre équipe support sur WhatsApp au : [Numéro] ou par email à : [Email]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Team Diaspora USA-DRC/Monde, Comité Léopards 2026</h3>
+                <p>Structure d'appui officielle pour la qualification et la participation de la RDC au Mondial 2026.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Email: info@leopards2026.cd</p>
+                <p>Tél: +243 00 000 0000</p>
+            </div>
+            <div class="footer-col">
+                <h3>Suivez-nous</h3>
+                <div class="socials">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Comité d'Appui Léopards. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
