@@ -1,1 +1,80 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Léopards 2026 | Portail d'Élite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="iphone-card">
+            <div class="red-accent-line"></div>
+            <header>
+                <div class="logo-area">
+                    <span class="red-text">SOUTIENT AUX </span><span class="gold-text">LÉOPARDS</span> <span class="white-text">2026</span>
+                </div>
+                <h1 class="title-with-line"><strong>Portail Officiel de Suggestions <br>aux Léopards</strong></h1>
+                <p><h3>Reconnaissant ma part de responsabilité, voici mes commentaires stratégiques pour la campagne 2026.</h3></p>
+                <p><strong>Notez Bien:</strong> Cette espace n'est reservé qu'aux commentaires stratégiques, des messages qui serviront &agrave; une meilleur performance des Léopards.Sinon, vous aideriez mieux les Léopards en vous abstenant</>
+            </header>
+
+            <form id="suggestionForm">
+                <div class="form-group">
+                    <label>Destinataire</label>
+                    <div class="select-wrapper">
+                        <select id="recipient" class="blue-text-select" required>
+                            <option value="" disabled selected>Choisir un officiel ou une org...</option>
+                            <option value="FECOFA">La Fédération Congolaise de Footbal Association (FECOFA)</option>
+                            <option value="TeamUSA">Le TeamUSA</option>
+                            <option value="Ministre des Sports">Le Ministre des Sports & Loisirs</option>
+                            <option value="Sélectionneur National">Le Sélectionneur National & son équipe</option>
+                            <option value="Joueur">Un Joueur Spécifique</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group conditional-field" id="playerNameGroup">
+                    <label>Nom Complet du Joueur</label>
+                    <input type="text" id="playerName" placeholder="ex: Chancel Mbemba">
+                </div>
+
+                <div class="form-group">
+                    <label>Votre Message</label>
+                    <textarea id="suggestion" rows="6" placeholder="Décrivez votre suggestion en détail..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Souhaitez-vous une réponse ?</label>
+                    <div class="segmented-control">
+                        <input type="radio" name="reply" value="no" id="replyNo" checked>
+                        <label for="replyNo">Non</label>
+                        <input type="radio" name="reply" value="yes" id="replyYes">
+                        <label for="replyYes">Oui</label>
+                    </div>
+                </div>
+
+                <div class="form-group conditional-field" id="contactInfoGroup">
+                    <label>Coordonnées (E-mail ou WhatsApp)</label>
+                    <input type="text" id="contactDetail" placeholder="email@exemple.com ou +243...">
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    <span class="btn-shine"></span>
+                    Soumettez votre suggétion
+                </button>
+            </form>
+
+            <div id="feedbackMessage" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
